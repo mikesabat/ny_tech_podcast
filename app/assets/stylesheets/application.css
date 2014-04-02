@@ -9,6 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require 'css/bootstrap.css'
+ *= require bootstrap.min
+ *= require animate.min
+ *= require settings
+ *= require prettyPhoto
+ *= require jquery.countdown
+ *= require font-awesome.min		
+ *= require style
  *= require_tree .
  */

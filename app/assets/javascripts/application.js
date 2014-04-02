@@ -12,5 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery
+//= require bootstrap.min
+//= require jquery.themepunch.plugins.min
+//= require jquery.themepunch.revolution.min
+//= require masonry.pkgd.min
+//= require imagesloaded.pkgd.min
+//= require jquery.cycle.all
+//= require jquery.flot.min     
+//= require jquery.flot.resize.min
+//= require jquery.countTo
+//= require waypoints.min
+//= require jquery.prettyPhoto
+//= require isotope
+//= require jquery.countdown.min
+//= require respond.min
+//= require html5shiv
+//= require custom
 //= require turbolinks
 //= require_tree .
