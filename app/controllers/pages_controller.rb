@@ -6,4 +6,10 @@ class PagesController < ApplicationController
 
   def gallery
   end
+
+  def aboutus
+  end
+
+  def episode
+  end
 end
