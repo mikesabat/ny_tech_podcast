@@ -1,0 +1,35 @@
+<h1>Listing episodes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Episode number</th>
+      <th>Guest</th>
+      <th>Embed link</th>
+      <th>Picture</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @episodes.each do |episode| %>
+      <tr>
+        <td><%= episode.name %></td>
+        <td><%= episode.episode_number %></td>
+        <td><%= episode.guest %></td>
+        <td><%= episode.embed_link %></td>
+        <td><%= episode.picture %></td>
+        <td><%= link_to 'Show', episode %></td>
+        <td><%= link_to 'Edit', edit_episode_path(episode) %></td>
+        <td><%= link_to 'Destroy', episode, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Episode', new_episode_path %>

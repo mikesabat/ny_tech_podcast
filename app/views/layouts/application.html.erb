@@ -27,7 +27,9 @@
 		<div class="wrapper white">
 		  <!-- Want to drop the <head> from Home page here, but it's not working? -->
 			<%= render 'layouts/header' %>
-			<%= yield %>
+			<div class="container">
+				<%= yield %>
+			</div>
 		</div>
 	</body>
 </html>

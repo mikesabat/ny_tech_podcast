@@ -1,5 +1,7 @@
 NyTechPodcast::Application.routes.draw do
 
+  resources :episodes
+
   root 'pages#home'
 
   get 'gallery' => 'pages#gallery'
