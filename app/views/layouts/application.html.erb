@@ -28,6 +28,9 @@
 		  <!-- Want to drop the <head> from Home page here, but it's not working? -->
 			<%= render 'layouts/header' %>
 			<div class="container">
+				<% flash.each do |name, msg| %>
+					<%= content_tag(:div, msg, class: "alert alert-info") %>
+				<% end %>
 				<%= yield %>
 			</div>
 
