@@ -33,6 +33,11 @@
   </div>
 
   <div class="form-group">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, autofocus: true, class: "form-control" %> 
+  </div>
+
+  <div class="form-group">
     <%= f.label :display %><br>
     <%= f.check_box :display, autofocus: true, class: "form-control" %> <!-- Try to make the checkbox bigger -->
   </div>

@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
 
 	def real_episodes
 		@real_eps = Episode.all.where(:display => true).order("created_at DESC")
+		@short_list = Episode.all.where(:display => true).order("created_at DESC").first
 	end
 
 end

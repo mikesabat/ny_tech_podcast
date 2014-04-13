@@ -69,6 +69,6 @@ class EpisodesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def episode_params
-      params.require(:episode).permit(:name, :episode_number, :guest, :embed_link, :picture, :display)
+      params.require(:episode).permit(:name, :episode_number, :guest, :embed_link, :picture, :display, :description)
     end
 end
